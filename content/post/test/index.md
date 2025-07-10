@@ -1,12 +1,9 @@
 ---
-title: 'Test'
-date: 2025-07-11T02:27:07+09:00
-draft: true
-image: 'main.jpg'
-categories:
-  - カテゴリ
-tags:
-  - タグ
+title: "My First Post"
+date: 2025-07-10T22:00:00+09:00
+draft: false
+tags: ["Hugo"]
+categories: ["Blog"]
 ---
 
 ## 記事
