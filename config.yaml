@@ -27,7 +27,7 @@ params:
     favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2025
+        since: 9999
         customText:
 
     dateFormat:
@@ -36,7 +36,7 @@ params:
 
     sidebar:
         emoji:
-        subtitle: 新卒のひよっこ
+        subtitle: A Japanese student.
         avatar:
             enabled: true
             local: true
@@ -185,16 +185,17 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/edamame13
+          url: https://github.com/
           params:
               icon: brand-github
 
         - identifier: twitter
           name: Twitter
-          url: https://x.com/eda_ma13
+          url: https://x.com/
           params:
               icon: brand-twitter
         
+
 related:
     includeNewer: true
     threshold: 60
