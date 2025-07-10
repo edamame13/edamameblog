@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>えまめの技術ブログ</title>
+        <link>https://edamame13.github.io/edamamenoblog/</link>
+        <description>Recent content on えまめの技術ブログ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language>
+        <copyright>えまめ</copyright>
+        <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://edamame13.github.io/edamamenoblog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://edamame13.github.io/edamamenoblog/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://edamame13.github.io/edamamenoblog/about/</guid>
+        <description>&lt;h2 id=&#34;自己紹介&#34;&gt;自己紹介
+&lt;/h2&gt;&lt;p&gt;ここに自己紹介&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://edamame13.github.io/edamamenoblog/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://edamame13.github.io/edamamenoblog/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
