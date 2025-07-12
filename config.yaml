@@ -35,7 +35,7 @@ params:
 
     sidebar:
         emoji:
-        subtitle: IT企業、新卒１年目のひよっこが技術的な知識やメモをアウトプットしていく技術ブログになっていく予定です。
+        subtitle: IT企業、新卒１年目のひよっこが技術的な知識やメモをアウトプットしていく技術ブログ。
         avatar:
             enabled: true
             local: true

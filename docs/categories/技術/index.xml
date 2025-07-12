@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on えまめの技術ブログ</title>
-        <link>https://edamame13.github.io/edamameblog/post/</link>
-        <description>Recent content in Posts on えまめの技術ブログ</description>
+        <title>技術 on えまめの技術ブログ</title>
+        <link>https://edamame13.github.io/edamameblog/categories/%E6%8A%80%E8%A1%93/</link>
+        <description>Recent content in 技術 on えまめの技術ブログ</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
         <copyright>えまめ</copyright>
-        <lastBuildDate>Sat, 12 Jul 2025 15:18:09 +0900</lastBuildDate><atom:link href="https://edamame13.github.io/edamameblog/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 12 Jul 2025 15:18:09 +0900</lastBuildDate><atom:link href="https://edamame13.github.io/edamameblog/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>なぜ技術ブログをHugo&#43;</title>
         <link>https://edamame13.github.io/edamameblog/p/%E3%81%AA%E3%81%9C%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92hugo-/</link>
         <pubDate>Sat, 12 Jul 2025 15:18:09 +0900</pubDate>
