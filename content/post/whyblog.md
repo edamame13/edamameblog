@@ -42,6 +42,6 @@ Wordpressは知識がない&セキュリティ攻撃が多いので対策を考�
 
 ### Hugo+Github Pagesを選んだ理由
 Hugoとは
-Pagesとは
+Pagesとは自動でかく
 
 
