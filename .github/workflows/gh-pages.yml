@@ -2,7 +2,7 @@ name: Build and Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy:
@@ -18,11 +18,13 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build site
-        run: hugo --minify
+        run: |
+          hugo --minify
+          touch public/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public   # Hugo のデフォルト出力ディレクトリ
+          publish_dir: ./public
           publish_branch: gh-pages
