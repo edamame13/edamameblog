@@ -24,7 +24,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /favicon.ico
+    favicon: /edamameblog/favicon.ico
     footer:
         since: 2025
         customText:
