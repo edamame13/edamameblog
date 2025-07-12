@@ -8,13 +8,41 @@
         <language>ja</language>
         <copyright>えまめ</copyright>
         <lastBuildDate>Sat, 12 Jul 2025 15:18:09 +0900</lastBuildDate><atom:link href="https://edamame13.github.io/edamameblog/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>なぜ技術ブログをHugo&#43;</title>
-        <link>https://edamame13.github.io/edamameblog/p/%E3%81%AA%E3%81%9C%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92hugo-/</link>
+        <title>なぜ技術ブログをHugo&#43;Github Pagesで始めたのか</title>
+        <link>https://edamame13.github.io/edamameblog/p/%E3%81%AA%E3%81%9C%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92hugo-github-pages%E3%81%A7%E5%A7%8B%E3%82%81%E3%81%9F%E3%81%AE%E3%81%8B/</link>
         <pubDate>Sat, 12 Jul 2025 15:18:09 +0900</pubDate>
         
-        <guid>https://edamame13.github.io/edamameblog/p/%E3%81%AA%E3%81%9C%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92hugo-/</guid>
-        <description>&lt;h2 id=&#34;なぜこの技術ブログを立ち上げたのか&#34;&gt;なぜこの技術ブログを立ち上げたのか
-&lt;/h2&gt;</description>
+        <guid>https://edamame13.github.io/edamameblog/p/%E3%81%AA%E3%81%9C%E6%8A%80%E8%A1%93%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92hugo-github-pages%E3%81%A7%E5%A7%8B%E3%82%81%E3%81%9F%E3%81%AE%E3%81%8B/</guid>
+        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
+&lt;/h2&gt;&lt;p&gt;基本すべき１投稿目です👏&lt;br&gt;
+本投稿では以下の2点について述べていこうと思います。&lt;br&gt;
+①なぜ技術ブログを始めたのか&lt;br&gt;
+②なぜ、Hugo+Github Pagesで始めたのか&lt;/p&gt;
+&lt;p&gt;自分は飽き性なので三日坊主にならないように頑張っていきたいです&lt;/p&gt;
+&lt;h2 id=&#34;なぜ技術ブログを始めたのか&#34;&gt;なぜ技術ブログを始めたのか
+&lt;/h2&gt;&lt;p&gt;一言で言えばアウトプットの機会がないから、アウトプットの機会づくりのため、という回答になるだろう。&lt;br&gt;
+社会人になってから、大学生と同じかそれ以上に多くの新しい技術や知識を日々吸収するようになった。&lt;br&gt;
+ただ、大学生と違うのはアウトプットの機会が圧倒的に少ないということ。&lt;br&gt;
+このことから、学んだことをただインプットするだけでは定着しにくいと感じるようになり、「アウトプットの場を持ちたい」と考えるようになった。&lt;/p&gt;
+&lt;p&gt;こんな思いからこの技術ブログは、私が日々学んだことを自分の言葉で整理し、記録し、発信するための場所にしたい。&lt;br&gt;
+アウトプットすることで記憶が定着しやすくなるだけでなく、文章にまとめる力や伝える力も同時に養いたい。&lt;br&gt;
+また、検索してもなかなか見つからなかったことや、自分がつまずいたポイントを誰かの助けになる形で残したいという思いもある。&lt;br&gt;
+こんな感じの思いでこれから発信を進めていきたいなー。&lt;/p&gt;
+&lt;h2 id=&#34;なぜhugogithub-pagesではじめたのか&#34;&gt;なぜHugo+Github Pagesではじめたのか
+&lt;/h2&gt;&lt;h3 id=&#34;初心者がブログを始める選択肢&#34;&gt;初心者がブログを始める選択肢
+&lt;/h3&gt;&lt;p&gt;「さて、ブログを始めよう！」ってなった時に幾つか選択肢が思い浮かんだ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QiitaやZennなどの技術系プラットフォーム&lt;/li&gt;
+&lt;li&gt;WordPressなどのCMS&lt;/li&gt;
+&lt;li&gt;静的サイトジェネレーター（Hugo、Jekyllなど）＋GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IT業界にいるとQiitaやZennなどの記事はよく見る。自分も使用していたのだが、カスタマイズ性が低く、自分があまりにも飽き性なのでモチベーションが続かなそうであった。&lt;br&gt;
+Wordpressは知識がない&amp;amp;セキュリティ攻撃が多いので対策を考える必要がある点で本題である「技術ブログを書く」に辿り着くまでのハードルが高いのかなーと思った。&lt;br&gt;
+そこで見つけたのが、&lt;strong&gt;HugoとGitHub Pages&lt;/strong&gt;を組み合わせる方法であった。&lt;/p&gt;
+&lt;h3 id=&#34;hugogithub-pagesを選んだ理由&#34;&gt;Hugo+Github Pagesを選んだ理由
+&lt;/h3&gt;&lt;p&gt;Hugoとは
+Pagesとは自動でかく&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Archives</title>
