@@ -42,7 +42,7 @@ params:
             src: img/avatar.png
 
     images:
-        - /img/avatar.png
+        - /img/avatar_hu_20b362dfe1e91a8f.png
 
     article:
         math: false
