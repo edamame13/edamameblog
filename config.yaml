@@ -41,6 +41,9 @@ params:
             local: true
             src: img/avatar.png
 
+    images:
+        - /img/avatar.png
+
     article:
         math: false
         toc: true
