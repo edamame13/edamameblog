@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://edamame13.github.io/edamameblog/post/</loc><lastmod>2025-07-11T00:13:56+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/</loc><lastmod>2025-07-11T00:13:56+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/categories/blog/</loc><lastmod>2025-07-10T22:00:00+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/categories/</loc><lastmod>2025-07-10T22:00:00+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/tags/hugo/</loc><lastmod>2025-07-10T22:00:00+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/p/my-first-post/</loc><lastmod>2025-07-10T22:00:00+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/tags/</loc><lastmod>2025-07-10T22:00:00+09:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/archives/</loc><lastmod>2019-05-28T00:00:00+00:00</lastmod></url><url><loc>https://edamame13.github.io/edamameblog/about/</loc></url><url><loc>https://edamame13.github.io/edamameblog/search/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://edamame13.github.io/edamameblog/categories/blog/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/categories/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/tags/github/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/post/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/tags/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/</loc>
+    <lastmod>2025-07-10T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/about/</loc>
+  </url><url>
+    <loc>https://edamame13.github.io/edamameblog/search/</loc>
+  </url>
+</urlset>
