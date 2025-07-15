@@ -7,6 +7,7 @@ categories:
   - カテゴリ
 tags:
   - タグ
+slug: "colabconf"
 ---
 
 ## 記事
