@@ -3,14 +3,14 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - master  # or main
+      - master  # ←メインブランチに合わせて変更
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Hugo
@@ -26,3 +26,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: edamameblog.com  # ←ここが超重要
