@@ -1,0 +1,82 @@
+{{- $permalink := .Permalink | absURL -}}
+{{- $title := .Title -}}
+
+<div class="social-share">
+    <span class="share-label"> 
+        <span class="share-icon">
+            {{ with resources.Get "icons/share.svg" }}{{ .Content | safeHTML }}{{ end }}
+        </span>
+        このページをシェア
+    </span>
+    <div class="share-buttons">
+        <a href="{{ $permalink }}" onclick="event.preventDefault(); navigator.clipboard.writeText(this.href);" title="リンクをコピー">
+            {{ with resources.Get "icons/link.svg" }}{{ .Content | safeHTML }}{{ end }}
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?url={{ $permalink }}&text={{ $title }}" 
+           target="_blank" rel="noopener" 
+           title="Twitterでシェア">
+            {{ with resources.Get "icons/brand-twitter.svg" }}{{ .Content | safeHTML }}{{ end }}
+        </a>
+
+        {{- $misskeyShareURL := printf "https://misskeyshare.link/share.html?text=%s&url=%s" ($title | urlquery) ($permalink | urlquery) -}}
+        <a href="{{ $misskeyShareURL }}" 
+           onclick="window.open(this.href, '', 'width=500,height=400'); return false;"
+           title="Misskeyでシェア">
+            {{ with resources.Get "icons/misskey.svg" }}{{ .Content | safeHTML }}{{ end }}
+        </a>
+    </div>
+</div>
+
+<style>
+    .social-share {
+        margin-bottom: 1.5rem;
+        margin-top: -0.7rem;
+        text-align: center;
+    }
+
+    .social-share .share-label .share-icon {
+        display: inline-block;
+        margin-right: 0.2rem;
+        vertical-align: middle;
+    }
+
+    .social-share .share-label .share-icon svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: var(--card-text-color-secondary);
+
+    }
+
+    .social-share .share-label {
+        display: block;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 1.3rem;
+        color: var(--card-text-color-main);
+        text-transform: uppercase;
+        letter-spacing: 0.05em; 
+    }
+
+    .social-share .share-buttons a {
+        display: inline-block;
+        margin: 0 8px;
+        color: var(--card-text-color-secondary);
+        transition: opacity 0.2s ease-in-out, transform 0.1s ease-in-out;
+    }
+
+    .social-share .share-buttons a:hover {
+        opacity: 0.6;
+    }
+
+    .social-share .share-buttons a:active {
+        opacity: 0.6;
+        transform: translateY(2px);
+    }
+
+    .social-share .share-buttons svg {
+        width: 29px;
+        height: 29px;
+        vertical-align: sub;
+    }
+</style>
