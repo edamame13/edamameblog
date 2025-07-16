@@ -48,10 +48,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;firebase init functions
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;pre&gt;&lt;code&gt;•	言語：JavaScript
+&lt;/div&gt;&lt;p&gt;•	言語：JavaScript
 •	ESLint：Yes（任意）
-•	npm install：Yes（推奨）
-&lt;/code&gt;&lt;/pre&gt;
+•	npm install：Yes（推奨）&lt;/p&gt;
 &lt;h2 id=&#34;functionsコードを実装functionsindexjs&#34;&gt;Functionsコードを実装（functions/index.js）
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -137,9 +136,8 @@ npm run lint &amp;ndash; &amp;ndash;fix&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;functionをデプロイ&#34;&gt;Functionをデプロイ
 &lt;/h2&gt;&lt;p&gt;firebase deploy &amp;ndash;only functions&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;•	成功すると次のような URL が表示される：
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;https://us-central1-&lt;your-project-id&gt;.cloudfunctions.net/likeHandler&lt;/p&gt;
+&lt;p&gt;•	成功すると次のような URL が表示される：
+https://us-central1-&lt;your-project-id&gt;.cloudfunctions.net/likeHandler&lt;/p&gt;
 &lt;h2 id=&#34;フロントエンドのhtmljs&#34;&gt;フロントエンドのHTML+JS
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -38,9 +38,9 @@ firebase login
 firebase init functions
 ```
 
-	•	言語：JavaScript
-	•	ESLint：Yes（任意）
-	•	npm install：Yes（推奨）
+•	言語：JavaScript
+•	ESLint：Yes（任意）
+•	npm install：Yes（推奨）
 
 ## Functionsコードを実装（functions/index.js）
 
@@ -89,7 +89,7 @@ npm run lint -- --fix
 ## Functionをデプロイ
 firebase deploy --only functions
 
-	•	成功すると次のような URL が表示される：
+•	成功すると次のような URL が表示される：
 https://us-central1-<your-project-id>.cloudfunctions.net/likeHandler
 
 
