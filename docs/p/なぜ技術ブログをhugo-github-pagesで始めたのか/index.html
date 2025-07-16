@@ -424,7 +424,7 @@
         const articleId = location.pathname;  
         const likeButton = document.getElementById('like-button');
         const likeCountSpan = document.getElementById('like-count');
-        const LIKE_LIMIT = 10;
+        const LIKE_LIMIT = 1;
         const userLikeCountKey = `user_like_count_${articleId}`;
 
         if (!likeButton) return;
@@ -593,6 +593,34 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/like/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/main.jpg" loading="lazy" data-key="like" data-hash="/main.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">「Cloud Functions For Firebase」を用いて&#34;いいね機能&#34;を実装した</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     

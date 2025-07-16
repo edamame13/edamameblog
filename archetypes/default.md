@@ -7,7 +7,7 @@ categories:
   - カテゴリ
 tags:
   - タグ
-slug: "colabconf"
+slug: '{{ replace .File.ContentBaseName "-" " " | title }}'
 ---
 
 ## 記事
