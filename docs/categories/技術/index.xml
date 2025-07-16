@@ -255,11 +255,11 @@ https://us-central1-&lt;your-project-id&gt;.cloudfunctions.net/likeHandler&lt;/p
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/docs/functions?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Firebase Cloud Functions公式ドキュメント&lt;/a&gt;
+    &gt;Firebase Cloud Functions公式ドキュメント&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/docs/firestore?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloud Firestoreドキュメント&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/pricing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Blazeプランの無料枠&lt;/a&gt;
+    &gt;Blazeプランの無料枠&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://blog.bokukoha.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;とても参考にしているサイト&lt;/a&gt;&lt;/p&gt;
 </description>

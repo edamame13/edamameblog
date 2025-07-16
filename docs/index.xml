@@ -255,11 +255,11 @@ https://us-central1-&lt;your-project-id&gt;.cloudfunctions.net/likeHandler&lt;/p
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/docs/functions?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Firebase Cloud Functions公式ドキュメント&lt;/a&gt;
+    &gt;Firebase Cloud Functions公式ドキュメント&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/docs/firestore?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloud Firestoreドキュメント&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/pricing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Blazeプランの無料枠&lt;/a&gt;
+    &gt;Blazeプランの無料枠&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://blog.bokukoha.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;とても参考にしているサイト&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -270,7 +270,7 @@ https://us-central1-&lt;your-project-id&gt;.cloudfunctions.net/likeHandler&lt;/p
         <pubDate>Sun, 13 Jul 2025 23:24:19 +0900</pubDate>
         
         <guid>https://edamameblog.com/p/colabconf/</guid>
-        <description>&lt;h2 id=&#34;概要&#34;&gt;概要
+        <description>&lt;img src="https://edamameblog.com/main.jpg" alt="Featured image of post 7/13 ColabConfに参加してきた話" /&gt;&lt;h2 id=&#34;概要&#34;&gt;概要
 &lt;/h2&gt;&lt;p&gt;2025年7月13日、新卒1年目の筆者がサポーターズColab主催のカンファレンス「Colab Conf（コラコン）」に参加してきた。今回の第一テーマは「AIとキャリア」であり、有名な登壇者による約20のセッションが行われた。特筆すべきは、オンライン登壇予定だったひろゆき氏(本人)がサプライズで出演した点である。&lt;/p&gt;
 &lt;p&gt;本記事では、カンファレンス初参加者としての感想や学びをざっくばらんにまとめる。&lt;/p&gt;
 &lt;h2 id=&#34;カンファレンスとは&#34;&gt;カンファレンスとは
