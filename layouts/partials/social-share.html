@@ -19,12 +19,6 @@
             {{ with resources.Get "icons/brand-twitter.svg" }}{{ .Content | safeHTML }}{{ end }}
         </a>
 
-        {{- $misskeyShareURL := printf "https://misskeyshare.link/share.html?text=%s&url=%s" ($title | urlquery) ($permalink | urlquery) -}}
-        <a href="{{ $misskeyShareURL }}" 
-           onclick="window.open(this.href, '', 'width=500,height=400'); return false;"
-           title="Misskeyでシェア">
-            {{ with resources.Get "icons/misskey.svg" }}{{ .Content | safeHTML }}{{ end }}
-        </a>
     </div>
 </div>
 
