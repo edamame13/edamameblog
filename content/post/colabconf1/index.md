@@ -1,6 +1,7 @@
 ---
 title: 7/13 ColabConfに参加してきた話
 date: 2025-07-13T23:24:19+09:00
+image: 'main.jpg'
 draft: false
 categories:
   - 勉強会
