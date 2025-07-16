@@ -1,11 +1,12 @@
-name: Build Hugo to docs folder
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [master]  # or main
+    branches:
+      - master  # or main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +18,11 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - name: Build to docs
-        run: hugo --minify -d docs
+      - name: Build Hugo
+        run: hugo --minify
 
-      - name: Commit and Push docs
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs
-          git commit -m "Auto-build site to docs" || echo "No changes to commit"
-          git push origin master
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
