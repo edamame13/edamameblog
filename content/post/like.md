@@ -2,7 +2,6 @@
 title: 「Cloud Functions For Firebase」を用いて"いいね機能"を実装した
 date: 2025-07-17T00:03:14+09:00
 draft: false
-image: 'main.jpg'
 categories:
   - 技術
 tags:
@@ -23,7 +22,7 @@ slug: like
 
 - ページごとに「いいね！」が押せる
 - 押すと数が増える
-- ローカルストレージで連打防止（1回まで）
+- ローカルストレージで連打防止（20回まで）
 
 ## Firebase プロジェクト作成
 
@@ -33,7 +32,7 @@ slug: like
    ※ 通常利用では無料枠内に収まることが多いです
 
 ## Firebase CLI を使って Functions 初期化
-```
+```bash
 npm install -g firebase-tools
 firebase login
 firebase init functions
@@ -45,7 +44,7 @@ firebase init functions
 
 ## Functionsコードを実装（functions/index.js）
 
-```
+```functions/index.js
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 
@@ -96,7 +95,7 @@ https://us-central1-<your-project-id>.cloudfunctions.net/likeHandler
 
 ## フロントエンドのHTML+JS
 
-```
+```layouts/partials/like.html
 <div class="like-container">
   <button id="like-button" title="いいね！">
     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="#ea5550">
@@ -157,3 +156,4 @@ document.addEventListener("DOMContentLoaded", () => {
 [Firebase Cloud Functions公式ドキュメント](https://firebase.google.com/docs/functions?hl=ja)
 [Cloud Firestoreドキュメント](https://firebase.google.com/docs/firestore?hl=ja)
 [Blazeプランの無料枠](https://firebase.google.com/pricing)
+[とても参考にしているサイト](https://blog.bokukoha.dev/)

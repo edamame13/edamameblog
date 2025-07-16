@@ -424,7 +424,7 @@
         const articleId = location.pathname;  
         const likeButton = document.getElementById('like-button');
         const likeCountSpan = document.getElementById('like-count');
-        const LIKE_LIMIT = 1;
+        const LIKE_LIMIT = 20;
         const userLikeCountKey = `user_like_count_${articleId}`;
 
         if (!likeButton) return;
@@ -600,15 +600,9 @@
         <div class="flex article-list--tile">
             
                 
-<article class="has-image">
+<article class="">
     <a href="/p/like/">
         
-        
-            <div class="article-image">
-                
-                    <img src="/main.jpg" loading="lazy" data-key="like" data-hash="/main.jpg"/>
-                
-            </div>
         
 
         <div class="article-details">
