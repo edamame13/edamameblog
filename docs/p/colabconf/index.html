@@ -347,6 +347,118 @@
 </section>
 
 
+     <div class="like-container">
+    <button id="like-button" title="いいね！">
+        
+        <span id="like-count">0</span>
+    </button>
+</div>
+
+<style>
+    .like-container {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #like-button {
+        background: none;
+        border: 1px solid var(--card-border-color);
+        border-radius: 20px;
+        padding: 5px 15px;
+        padding-left: 35px;
+        color: var(--card-text-color-main);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    #like-button:hover {
+        background-color: var(--card-separator-color);
+    }
+
+    #like-button:active {
+        transform: scale(0.95);
+    }
+
+    #like-button svg {
+        width: 38px;
+        height: 38px;
+        stroke-width: 1.5;
+        fill: #ea5550;
+        transition: fill 0.3s ease, opacity 0.3s ease;
+    }
+
+    #like-button.limit-reached {
+        cursor: not-allowed;
+    }
+
+    #like-button.limit-reached:hover {
+        background-color: transparent;
+    }
+
+    #like-button.limit-reached svg {
+        fill: #666;
+        opacity: 0.6;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const apiEndpoint = '';
+        const apiKey = '';
+        const articleId = '\/p\/colabconf\/';
+        
+        const LIKE_LIMIT = 10;
+        const userLikeCountKey = `user_like_count_${articleId}`;
+
+        const likeButton = document.getElementById('like-button');
+        const likeCountSpan = document.getElementById('like-count');
+
+        if (!likeButton) return;
+
+        const requestHeaders = { 'x-api-key': apiKey };
+
+        fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`, { headers: requestHeaders })
+            .then(res => res.json())
+            .then(data => { likeCountSpan.textContent = data.likes || 0; })
+            .catch(err => console.error('いいね数取得失敗:', err));
+        
+        const currentUserLikes = parseInt(localStorage.getItem(userLikeCountKey) || '0');
+        if (currentUserLikes >= LIKE_LIMIT) {
+            likeButton.disabled = true;
+            likeButton.classList.add('limit-reached'); 
+        }
+
+        likeButton.addEventListener('click', () => {
+            let userLikes = parseInt(localStorage.getItem(userLikeCountKey) || '0');
+
+            if (userLikes < LIKE_LIMIT) {
+                userLikes++;
+                localStorage.setItem(userLikeCountKey, userLikes);
+                
+                likeCountSpan.textContent = parseInt(likeCountSpan.textContent) + 1;
+                
+                fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`, {
+                    method: 'POST',
+                    headers: requestHeaders
+                })
+                .then(res => res.json()).then(data => { likeCountSpan.textContent = data.likes; })
+                .catch(err => {
+                    likeCountSpan.textContent = parseInt(likeCountSpan.textContent) - 1;
+                    console.error('いいね送信失敗:', err);
+                });
+
+                if (userLikes >= LIKE_LIMIT) {
+                    likeButton.disabled = true;
+                    likeButton.classList.add('limit-reached');
+                }
+            }
+        });
+    });
+</script>
+
     <div class="social-share">
     <span class="share-label"> 
         <span class="share-icon">
