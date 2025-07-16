@@ -4,8 +4,6 @@ date: 2025-07-17T00:03:14+09:00
 draft: false
 categories:
   - 技術
-tags:
-  - タグ
 slug: like
 ---
 
