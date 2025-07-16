@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ```
 
 ## 参考
-[Firebase Cloud Functions公式ドキュメント](https://firebase.google.com/docs/functions?hl=ja)
-[Cloud Firestoreドキュメント](https://firebase.google.com/docs/firestore?hl=ja)
-[Blazeプランの無料枠](https://firebase.google.com/pricing)
-[とても参考にしているサイト](https://blog.bokukoha.dev/)
+[Firebase Cloud Functions公式ドキュメント](https://firebase.google.com/docs/functions?hl=ja)  
+[Cloud Firestoreドキュメント](https://firebase.google.com/docs/firestore?hl=ja) 
+[Blazeプランの無料枠](https://firebase.google.com/pricing)  
+[とても参考にしているサイト](https://blog.bokukoha.dev/)  
