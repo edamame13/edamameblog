@@ -1,6 +1,11 @@
 <div class="like-container">
     <button id="like-button" title="いいね！">
-        {{ with resources.Get "icons/heart.svg" }}{{ .Content | safeHTML }}{{ end }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="#ea5550">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                     2 6.5 3.5 5 5.5 5c1.54 0 3.04.99 3.57 2.36h1.87
+                     C13.46 5.99 14.96 5 16.5 5 18.5 5 20 6.5 20 8.5
+                     c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
         <span id="like-count">0</span>
     </button>
 </div>
@@ -15,8 +20,7 @@
         background: none;
         border: 1px solid var(--card-border-color);
         border-radius: 20px;
-        padding: 5px 15px;
-        padding-left: 35px;
+        padding: 5px 15px 5px 35px;
         color: var(--card-text-color-main);
         cursor: pointer;
         display: inline-flex;
@@ -57,54 +61,55 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const apiEndpoint = '{{ site.Params.apiEndpoint }}';
-        const apiKey = '{{ site.Params.apiKey }}';
-        const articleId = '{{ .RelPermalink }}';
-        
+        const apiEndpoint = "https://us-central1-like-button-blog-b554b.cloudfunctions.net/likeHandler";
+        const articleId = location.pathname;  // ex: "/blog/my-post"
+        const likeButton = document.getElementById('like-button');
+        const likeCountSpan = document.getElementById('like-count');
         const LIKE_LIMIT = 10;
         const userLikeCountKey = `user_like_count_${articleId}`;
 
-        const likeButton = document.getElementById('like-button');
-        const likeCountSpan = document.getElementById('like-count');
-
         if (!likeButton) return;
 
-        const requestHeaders = { 'x-api-key': apiKey };
-
-        fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`, { headers: requestHeaders })
+        // 現在のいいね数を取得（GET）
+        fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`)
             .then(res => res.json())
-            .then(data => { likeCountSpan.textContent = data.likes || 0; })
-            .catch(err => console.error('いいね数取得失敗:', err));
-        
+            .then(data => {
+                likeCountSpan.textContent = data.likes || 0;
+            })
+            .catch(err => {
+                console.error('いいね数取得失敗:', err);
+            });
+
         const currentUserLikes = parseInt(localStorage.getItem(userLikeCountKey) || '0');
         if (currentUserLikes >= LIKE_LIMIT) {
             likeButton.disabled = true;
-            likeButton.classList.add('limit-reached'); 
+            likeButton.classList.add('limit-reached');
         }
 
         likeButton.addEventListener('click', () => {
             let userLikes = parseInt(localStorage.getItem(userLikeCountKey) || '0');
+            if (userLikes >= LIKE_LIMIT) return;
 
-            if (userLikes < LIKE_LIMIT) {
-                userLikes++;
-                localStorage.setItem(userLikeCountKey, userLikes);
-                
-                likeCountSpan.textContent = parseInt(likeCountSpan.textContent) + 1;
-                
-                fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`, {
-                    method: 'POST',
-                    headers: requestHeaders
-                })
-                .then(res => res.json()).then(data => { likeCountSpan.textContent = data.likes; })
-                .catch(err => {
-                    likeCountSpan.textContent = parseInt(likeCountSpan.textContent) - 1;
-                    console.error('いいね送信失敗:', err);
-                });
+            userLikes++;
+            localStorage.setItem(userLikeCountKey, userLikes);
 
-                if (userLikes >= LIKE_LIMIT) {
-                    likeButton.disabled = true;
-                    likeButton.classList.add('limit-reached');
-                }
+            likeCountSpan.textContent = parseInt(likeCountSpan.textContent) + 1;
+
+            fetch(`${apiEndpoint}/${encodeURIComponent(articleId)}`, {
+                method: 'POST'
+            })
+            .then(res => res.json())
+            .then(data => {
+                likeCountSpan.textContent = data.likes;
+            })
+            .catch(err => {
+                likeCountSpan.textContent = parseInt(likeCountSpan.textContent) - 1;
+                console.error('いいね送信失敗:', err);
+            });
+
+            if (userLikes >= LIKE_LIMIT) {
+                likeButton.disabled = true;
+                likeButton.classList.add('limit-reached');
             }
         });
     });
