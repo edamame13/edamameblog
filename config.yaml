@@ -1,4 +1,4 @@
-baseurl: https://edamameblog.com/
+baseURL: "https://edamameblog.com/"
 languageCode: ja
 theme: hugo-theme-stack
 title: えまめの技術ブログ
