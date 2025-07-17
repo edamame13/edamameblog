@@ -1,0 +1,42 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # サイトをデプロイしたいブランチ名（例: main または master）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # リポジトリへの書き込み権限を付与 (gh-pagesブランチへのプッシュのため)
+      pages: write    # GitHub Pagesへのデプロイ権限を付与
+      id-token: write # OpenID Connect (OIDC) のために必要aa
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true # テーマがSubmoduleの場合に必要
+          fetch-depth: 0   # 完全なgit履歴が必要な場合に設定
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # 最新版のHugoを使用
+
+      - name: Build Hugo site
+        run: hugo --minify # Hugoサイトをビルド（--minifyで最適化）
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public # Hugoのデフォルトの出力ディレクトリ
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # GitHub Pagesへのデプロイアクション
