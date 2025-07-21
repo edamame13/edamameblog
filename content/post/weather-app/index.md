@@ -19,10 +19,9 @@ slug: 'kiro'
 
 ## 完成品
 
-**デモサイト**: https://edamame13.github.io/weather-app/
+**デモサイト**: https://edamame13.github.io/weather-app/  
 **ソースコード**: https://github.com/edamame13/weather-app
 
-![天気予報アプリのスクリーンショット](https://via.placeholder.com/600x400?text=Weather+App+Screenshot)
 
 ## 主な機能
 
