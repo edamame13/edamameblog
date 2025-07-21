@@ -1,5 +1,5 @@
 ---
-title: 'Weather App'
+title: 'GitHub ActionsとSecretsを使って安全にAPIキーを管理する天気予報アプリの作り方'
 date: 2025-07-21T23:13:23+09:00
 draft: false
 categories:
@@ -8,8 +8,6 @@ tags:
   - タグ
 slug: 'kiro'
 ---
-
-# GitHub ActionsとSecretsを使って安全にAPIキーを管理する天気予報アプリの作り方
 
 ## はじめに
 
