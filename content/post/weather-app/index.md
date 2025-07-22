@@ -5,7 +5,7 @@ draft: false
 categories:
   - 技術
 tags:
-  - タグ
+  - kiro
 slug: 'kiro'
 ---
 
