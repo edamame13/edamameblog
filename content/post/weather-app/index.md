@@ -32,7 +32,7 @@ Kiroは、コーディングに不慣れな初心者から、業務効率化を�
 **ソースコード**: https://github.com/edamame13/weather-app
 
 <figure>
-  <img src="/images/weather-app/app.jpeg" alt="app" title="app" width=1000px>
+  <img src="/images/weather-app/app.jpeg" title="app" width=700px>
   <figcaption>実際の画像</figcaption>
 </figure>
 
